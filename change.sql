@@ -1,5 +1,10 @@
 DECLARE 
-	MENSAGE VARCHAR(20):= "Olá mundo"
+	SUBTYPE NAMEBODY IS VARCHAR(20);
+	SUBTYPE AGEBODY IS INTEGER(3);
+	NAME NAMEBODY;
+	AGE AGEBODY;
 BEGIN
-	dbms_output.put_line(MENSAGE);
+	NAME:='Luiz';
+	AGE:='20';
+	dbms_output.put_line('hello '|| NAME || 'u have'|| AGE ||'years');
 END;
